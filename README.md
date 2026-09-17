@@ -149,9 +149,14 @@ punching pinholes in thin walls where two stages disagree by one cell.
   Reading modulus off the distance field over-sizes risers 2–3×. `component_modulus`
   measures true V/A from voxel face counts (exact to 0.0% on flat-faced solids)
   and hot spots are scaled from it by relative section depth.
-- **Choke area is independent of alloy density.** Mass scales with ρ and the
-  formula divides by ρ, so they cancel: the choke is a function of volume and
-  fill time. Correct, but surprising at first glance.
+- **The choke is sized by modulus, not by fill rate.** An earlier version sized
+  it from Bernoulli and continuity, with a pour time, a discharge coefficient
+  and a metallostatic head. The sprue in an investment tree doubles as the
+  feeder, so its base is set by the modulus it has to out-freeze — and that
+  requirement always won. Those inputs changed nothing in the output, so they
+  were removed rather than left on screen implying otherwise. Alloy density
+  now affects only the reported pour mass. See `gating.py` and
+  [docs/pouring-funnels.md](docs/pouring-funnels.md).
 - **Riser sizing is analytic**, not voxel-measured: `M = D·H/(4H + D)` for a top
   riser whose base face is fed, inverted in closed form. The achieved factor is
   exactly 1.2000.
@@ -178,3 +183,13 @@ punching pinholes in thin walls where two stages disagree by one cell.
   low on a sphere. Flat-faced parts are exact. Reduce `--pitch` to converge.
 - Riser placement is vertical top-feeding only; no side risers or chills.
 - Grid memory scales as pitch⁻³; a warning fires above 40M voxels.
+
+## Licence
+
+Copyright © 2026 Arman Marchiel. All rights reserved.
+
+This is **not** open-source software. The source is published for viewing
+only — no right to use, copy, modify or distribute it is granted. See
+[LICENSE](LICENSE) for the full terms, or get in touch for permission.
+
+The third-party packages it depends on remain under their own licences.

@@ -1,0 +1,27 @@
+Copyright (c) 2026 Arman Marchiel. All rights reserved.
+
+This software and its source code are proprietary and confidential.
+
+The source is published for viewing only. No licence, express or implied,
+is granted to any person obtaining a copy of this software to use, copy,
+modify, merge, publish, distribute, sublicense, create derivative works
+from, or sell it, in whole or in part, by any means.
+
+Viewing this repository does not grant any right to the software. Copying
+any portion of it into another work, or using it to train or fine-tune a
+machine-learning model, is not permitted without prior written permission
+from the copyright holder.
+
+For permission to use this software, contact arman.marchiel23@gmail.com.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHOR OR COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+
+This software depends on third-party open-source packages, each of which
+remains under its own licence. Those licences cover only their respective
+packages and grant no rights to this software.
