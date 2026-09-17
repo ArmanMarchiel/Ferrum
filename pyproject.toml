@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cad2shell"
+version = "0.1.0"
+description = "AI-assisted metal-casting CAD: part STL -> investment shell mold + gating tree"
+requires-python = ">=3.10"
+
+[tool.setuptools]
+package-dir = {"" = "backend/src"}
+packages = ["cad2shell", "server"]
+
+# Pytest config lives in backend/pytest.ini, next to the tests it governs, so a
+# bare `pytest` run from backend/ picks up the src/ path without extra flags.
